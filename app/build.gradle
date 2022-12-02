@@ -32,7 +32,8 @@ android {
 
 dependencies {
 
-//    compileOnly 'androidx.appcompat:appcompat:1.5.1'
+    // 必须 ，依赖排查中
+    implementation 'androidx.appcompat:appcompat:1.5.1'
 //    implementation 'com.google.android.material:material:1.7.0'
 //    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 //    implementation 'androidx.navigation:navigation-fragment:2.5.3'
@@ -41,6 +42,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
+    // 必须 后续拆开
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61'
     implementation(name:'encryptor-0.0.9-rc.2-private', ext:'aar')
     implementation(name:'if_encryptor-1.0.0-rc.5', ext:'aar')
